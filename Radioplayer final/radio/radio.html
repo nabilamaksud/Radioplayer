@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reproductor Neomorfo</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div id="music-player">
+  <h2>Music Player</h2>
+  <audio id="audio-player" controls></audio>
+  <br>
+  <button onclick="playPause()">Play/Pause</button>
+</div>
+
+<script>
+  const audioPlayer = document.getElementById('audio-player');
+
+  function playPause() {
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  }
+</script>
+
+</body>
+</html>
